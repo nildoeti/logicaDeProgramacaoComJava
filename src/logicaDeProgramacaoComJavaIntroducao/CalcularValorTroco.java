@@ -6,17 +6,21 @@ public class CalcularValorTroco {
 
 	public static void main(String[] args) {
 		// CALCULA troco de um produto
-		Scanner terminal = new Scanner(System.in);
+		Scanner terminal = new Scanner(System.in);	
 		
-		System.out.println("Digite o valor do produto: ");
+		// entrada dos dados
+		System.out.print("Digite o valor do produto: ");
 		Double valorDoProduto = terminal.nextDouble();
 		
-		System.out.println("Digitee a quantidade passada pelo cliente: ");
+		System.out.println("Informe o valor passado pelo cliente: ");
 		Double valorPassadoPeloCliente = terminal.nextDouble();
 		
-		Double resultado = valorDoProduto - valorPassadoPeloCliente;
+		// processamento dos dados
+		Double resultado = valorPassadoPeloCliente - valorDoProduto;
 		
+		// saida
 		System.out.println("Troco: " + resultado);
+		
 		terminal.close();
 	}
 
